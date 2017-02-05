@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+\usepackage{color}
+
+% personal data
+\name{Kangping}{Dong}
+% \title{Resumé title}                               % optional, remove / comment the line if not wanted
+% \address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+86)131-6708-5091}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+% \phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{wgtdkp@163.com}                              % optional, remove / comment the line if not wanted
+
+% the homepage is almost blank now
+\homepage{www.github.com/wgtdkp}                         % optional, remove / comment the line if not wanted
+
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--Present}{MS in Network and Service computing, Supervisor: Linpeng Huang}{Computer Science, Shanghai Jiaotong University}{expected 2018}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2011--2015}{BA in Micro Electronic}{Electronic Engineering, Huazhong University of Science and Technology}{}{}{}
+
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+\section{Internship}
+\cventry{2015}{Morgan Stanley}
+{Technology \& Data Department}
+{}{}{
+	Designed and implemented a simulator of \textsl{CNAPS2} system to help testing.
+	It is Simulator that can receive and parse packages and send receipt
+	to pretend to be \textsl{CNAPS2} system.
+}
+\cventry{2014}{DJI}
+{Navigation Department}
+{}{}{
+	Developed a coding style checking tool.I focused in parsing the C source file to generate a
+	syntax tree and laoding style specifications on it. The Style specifications is configurable
+	and it is quite easy to add more specifications with little work.
+}
+
+\section{Projects}
+
+\cventry{2015-present}
+{Wgtcc}
+{Compiler}
+{Independent Project}{}{
+	Wgtcc is a small yet powerful C11 compiler. It implemented almost full C11 language standard including some advanced features: Static Assertion, Unicode String, Compound Literal, etc. A preprocessor is also included. 
+}
+
+\cventry{2016}
+{Julia}
+{Web Serveice, Network Programming}
+{Independent Project}{}{
+	Julia is a small and high performance http server and reverse proxy inspired by NGINX.
+	Making use of non-blocking I/O and \textit{sendfile}, Julia achieves 56K QPS of 1KiB static page on commodity machine.
+}
+
+\cventry{2016}
+{Juson}
+{Json, Parser}
+{Independent Project}{}{
+	A json parser implemented in 500 lines C. Its performance beats 24 json parsers in this \href{https://github.com/miloyip/nativejson-benchmark}{\textit{benchmark}}.
+}
+
+\cventry{2015}
+{6502 CPU Emulator}
+{CPU, Assembly}
+{Independent Project}{}{
+	A software emulated 6502 CPU to help understanding virtual machine and interpreter. A 6502 assembler is also implemented to support running assembly code.
+}
+
+
+% \section{Languages}
+% \cvitemwithcomment{Language 1}{Skill level}{Comment}
+% \cvitemwithcomment{Language 2}{Skill level}{Comment}
+% \cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Awards \& Performance}
+\cventry{2015}{GPA Rank: 5\%}{}{}{}{}
+\cventry{2014}{First Prize in Electronic Design Contest in Provinces}{}{}{}{}
+\cventry{2013}{Annual Best Students of HUST}{}{}{}{}
+\cventry{2013}{National Scholarship}{}{}{}{}
+\cventry{2012}{National Encouragement Scholarship}{}{}{}{}
+
+\section{Skills}
+\cventry{Languages}{C $\ge$ C++ $>$ Python $>$ Rust}{}{}{}{}
+\cventry{English}{CET-4 549}{fluent in reading and writing}{}{}{}
+
+
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
