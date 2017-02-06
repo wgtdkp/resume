@@ -1,0 +1,96 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+  
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Noto Sans CJK SC}
+\setsansfont[Mapping=tex-text]{Noto Sans CJK SC}
+\CJKtilde
+
+% personal data
+\firstname{董康平}
+\familyname{}
+\title{}               % optional, remove the line if not wanted
+
+\mobile{(+86)131-6708-5091}                    % optional, remove the line if not wanted
+\email{wgtdkp@163.com}                         % optional, remove the line if not wanted
+\homepage{www.github.com/wgtdkp}                         % optional, remove / comment the line if not wanted
+%% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{教育}
+\cventry{2015至今}{硕士}{上海交通大学计算机学院，导师：黄林鹏}{将于 2018 年毕业}{}{}
+\cventry{2011--2015}{本科}{华中科技大学电子工程系}{}{}{}  
+
+\section{实习经历}
+\cventry{2015}{摩根士丹利信息技术暑期实习生}{技术与数据部门}{}{}{设计并实现了第二代支付系统模拟交易软件，协助测试内部交易系统。该模拟器通过解析报文并发送对应的回复报文伪装为通信对端，与内部系统进行模拟交易。}
+\cventry{2014}{大疆创新(DJI)}{导航部门}{}{}{
+	开发编码规范检查工具。该工具通过解析源程序，生成对应的语法树，将编码规范应用与对应的语法树节点以生成建议修改报告。
+}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2015至今}
+{Wgtcc}
+{编译器}
+{独立项目}{}
+{wgtcc 是一个C++11编写的精简的C11编译器。不仅支持完整的C语言语法，还包括C11中引进的诸多新特性，如static assertion、compound literal、unicode string等等。该编译器还包含一个完整的C预处理器。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2016}
+{Julia}
+{web，网络编程}
+{独立项目}{}
+{julia是一个类NGINX的基于非阻塞I/O的高并发web服务器和反向代理。在局域网内，可达到50K QPS的1KB静态页面访问。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2016}
+{Juson}
+{json，解析器}
+{独立项目}{}
+{juson是一个轻量级的json解析器。具有代码短小、易读、使用方便等优点。性能超过 taocpp/json、Parson、json-c等众多json解析器。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2015}
+{6502 CPU Emulator}
+{CPU，汇编器}
+{独立项目}{}
+{软件模拟的6502 8位CPU/虚拟机。同时，其包含一个汇编器，支持汇编编程。}
+
+\renewcommand{\baselinestretch}{1.0}
+
+\section{奖项与表现}
+\cventry{2015}{总绩点排名：前5\%}{}{}{}{}
+\cventry{2014}{省电子设计竞赛一等奖}{}{}{}{}
+\cventry{2013}{年度特优生}{}{}{}{}
+\cventry{2013}{国家奖学金}{}{}{}{}
+\cventry{2012}{国家励志奖学金}{}{}{}{}
+
+
+\section{技能}
+\cventry{语言}{C $\ge$ C++ $>$ Python $>$ Rust}{}{}{}{}
+\cventry{英语}{CET-4 549 分}{流利的英语读写能力}{}{}{}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
