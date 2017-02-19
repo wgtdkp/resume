@@ -25,7 +25,7 @@
 \email{wgtdkp@163.com}                              % optional, remove / comment the line if not wanted
 
 % the homepage is almost blank now
-\homepage{www.github.com/wgtdkp}                         % optional, remove / comment the line if not wanted
+\homepage{www.github.com/wgtdkp}                    % optional, remove / comment the line if not wanted
 
 % \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 % \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -62,47 +62,54 @@
 {Technology \& Data Department}
 {}{}{
 	Designed and implemented a simulator of \textsl{CNAPS2} system to help testing.
-	It is Simulator that can receive and parse packages and send receipt
-	to pretend to be \textsl{CNAPS2} system.
+	The Simulator receives and parses message packages and sends receipt
+	to pretend to be a \textsl{CNAPS2} system.
 }
+
 \cventry{2014}{DJI}
 {Navigation Department}
 {}{}{
 	Developed a coding style checking tool.I focused in parsing the C source file to generate a
-	syntax tree and laoding style specifications on it. The Style specifications is configurable
+	syntax tree and loading style specifications on it. The Style specifications is configurable
 	and it is quite easy to add more specifications with little work.
 }
 
 \section{Projects}
+\cventry{2016-present}
+{NVDS}
+{Storage}
+{Research Project}{}{
+	NVDS is a system that using nonvolatile memory in distributed storage system to provide fast replication and low latency. By synchronizing modifications on master to slaves with RDMA, it can replicate 256bytes in less than 5us
+	latency. I am still working on this project.
+}
 
 \cventry{2015-present}
 {Wgtcc}
 {Compiler}
 {Independent Project}{}{
-	Wgtcc is a small yet powerful C11 compiler. It implemented almost full C11 language standard including some advanced features: Static Assertion, Unicode String, Compound Literal, etc. A preprocessor is also included. 
+	Wgtcc is a small yet standard C11 compiler. It implemented almost full C11 language standard including some advanced features: Static Assertion, Unicode String, Compound Literal, etc. A preprocessor is also included. 
 }
 
 \cventry{2016}
 {Julia}
-{Web Serveice, Network Programming}
+{Web Server, Network Programming}
 {Independent Project}{}{
-	Julia is a small and high performance http server and reverse proxy inspired by NGINX.
-	Making use of non-blocking I/O and \textit{sendfile}, Julia achieves 56K QPS of 1KiB static page on commodity machine.
+	Julia is a small and high performance http server and reverse proxy. Making use of non-blocking I/O and \textit{sendfile}, Julia achieves 56K QPS of 1KiB static page on commodity machine.
 }
 
 \cventry{2016}
 {Juson}
 {Json, Parser}
 {Independent Project}{}{
-	A json parser implemented in 500 lines C. Its performance beats 24 json parsers in this \href{https://github.com/miloyip/nativejson-benchmark}{\textit{benchmark}}.
+	A lightweight fast json parser for C. Its performance beats 24 json parsers in this \href{https://github.com/miloyip/nativejson-benchmark}{\textit{benchmark}}.
 }
 
-\cventry{2015}
-{6502 CPU Emulator}
-{CPU, Assembly}
-{Independent Project}{}{
-	A software emulated 6502 CPU to help understanding virtual machine and interpreter. A 6502 assembler is also implemented to support running assembly code.
-}
+%\cventry{2015}
+%{6502 Virtual Machine}
+%{CPU, Assembly}
+%{Independent Project}{}{
+%	A software emulated 6502 CPU to help understanding virtual machine and interpreter. A 6502 assembler is also implemented to support running assembly code.
+%}
 
 
 % \section{Languages}
@@ -118,7 +125,7 @@
 \cventry{2012}{National Encouragement Scholarship}{}{}{}{}
 
 \section{Skills}
-\cventry{Languages}{C $\ge$ C++ $>$ Python $>$ Rust}{}{}{}{}
+\cventry{Languages}{C $\ge$ C++ $>$ Python $>$ Lisp}{}{}{}{}
 \cventry{English}{CET-4 549}{fluent in reading and writing}{}{}{}
 
 

@@ -14,7 +14,7 @@
 \usepackage{CJKutf8}
   
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.82]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 \setmainfont[Mapping=tex-text]{Noto Sans CJK SC}
 \setsansfont[Mapping=tex-text]{Noto Sans CJK SC}
@@ -49,32 +49,40 @@
 \section{项目经历}
 \renewcommand{\baselinestretch}{1.2}
 
+\cventry{2016至今}
+{NVDS}
+{存储}
+{研究项目}{}
+{NVDS主要研究将非易失性内存应用于分布式存储系统，以提供快速备份与更低的延迟。通过将主节点的修改以RDMA写的方式同步到从节点，NVDS能够以低于5us的延迟完成256字节数据的备份。我仍然在做进一步的研究。}
+
 \cventry{2015至今}
 {Wgtcc}
 {编译器}
 {独立项目}{}
-{wgtcc 是一个C++11编写的精简的C11编译器。不仅支持完整的C语言语法，还包括C11中引进的诸多新特性，如static assertion、compound literal、unicode string等等。该编译器还包含一个完整的C预处理器。}
+{wgtcc 是一个C++11编写的精简的C11编译器。不仅支持完整的C语言语法，还包括C11中引进的诸多新特性，如: Static Assertion、Unicode String、Compound Literal等等。该编译器还包含一个完整的C预处理器。}
 
 \vspace*{0.2\baselineskip}
 \cventry{2016}
 {Julia}
-{web，网络编程}
+{web服务器，网络编程}
 {独立项目}{}
-{julia是一个类NGINX的基于非阻塞I/O的高并发web服务器和反向代理。在局域网内，可达到50K QPS的1KB静态页面访问。}
+{julia是一个基于非阻塞I/O的高并发web服务器和反向代理。在局域网内，可达到 50K QPS 的 1KiB 静态页面访问。}
 
 \vspace*{0.2\baselineskip}
 \cventry{2016}
 {Juson}
 {json，解析器}
 {独立项目}{}
-{juson是一个轻量级的json解析器。具有代码短小、易读、使用方便等优点。性能超过 taocpp/json、Parson、json-c等众多json解析器。}
+{juson是一个轻量级的json解析器。其性能超过 taocpp/json、Parson、json-c等众多C/C++ json解析器。}
 
-\vspace*{0.2\baselineskip}
-\cventry{2015}
-{6502 CPU Emulator}
-{CPU，汇编器}
-{独立项目}{}
-{软件模拟的6502 8位CPU/虚拟机。同时，其包含一个汇编器，支持汇编编程。}
+%\begin{comment}
+%\vspace*{0.2\baselineskip}
+%\cventry{2015}
+%{6502 CPU Emulator}
+%{CPU，汇编器}
+%{独立项目}{}
+%{软件模拟的6502 8位CPU/虚拟机。同时，其包含一个汇编器，支持汇编编程。}
+%\end{comment}
 
 \renewcommand{\baselinestretch}{1.0}
 
@@ -87,7 +95,7 @@
 
 
 \section{技能}
-\cventry{语言}{C $\ge$ C++ $>$ Python $>$ Rust}{}{}{}{}
+\cventry{语言}{C $\ge$ C++ $>$ Python $>$ Lisp}{}{}{}{}
 \cventry{英语}{CET-4 549 分}{流利的英语读写能力}{}{}{}
 
 \closesection{}                   % needed to renewcommands
