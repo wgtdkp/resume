@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.2.6)  19 FEB 2017 12:10
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2017.2.6)  8 APR 2017 09:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -553,15 +553,15 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(59.74988pt, 478.00812pt, 59.74988pt)
-* v-part:(T,H,B)=(67.60269pt, 676.04005pt, 101.4041pt)
+* h-part:(L,W,R)=(53.77351pt, 489.96083pt, 53.77353pt)
+* v-part:(T,H,B)=(60.84088pt, 692.9446pt, 91.26137pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=478.00812pt
-* \textheight=676.04005pt
-* \oddsidemargin=-12.52011pt
-* \evensidemargin=-12.52011pt
-* \topmargin=-41.6673pt
+* \textwidth=489.96083pt
+* \textheight=692.9446pt
+* \oddsidemargin=-18.49648pt
+* \evensidemargin=-18.49648pt
+* \topmargin=-48.42911pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -643,7 +643,18 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 52.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 52.
-[1
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 130.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 130.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [1
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
@@ -653,11 +664,11 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 17763 strings out of 493638
- 298308 string characters out of 6146797
- 366952 words of memory out of 5000000
- 21028 multiletter control sequences out of 15000+600000
- 57239 words of font info for 49 fonts, out of 8000000 for 9000
+ 17808 strings out of 493638
+ 299008 string characters out of 6146797
+ 366955 words of memory out of 5000000
+ 21068 multiletter control sequences out of 15000+600000
+ 57557 words of font info for 50 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  40i,11n,45p,10358b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 
