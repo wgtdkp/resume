@@ -14,7 +14,7 @@
 \usepackage{CJKutf8}
   
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.84]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 \setmainfont[Mapping=tex-text]{Noto Sans CJK SC}
 \setsansfont[Mapping=tex-text]{Noto Sans CJK SC}
@@ -41,7 +41,7 @@
 \cventry{2011--2015}{本科}{华中科技大学电子工程系}{}{}{}  
 
 \section{实习经历}
-\cventry{2017至今}{Google}{NBU(Next Billion User)}{}{}{
+\cventry{2017}{Google}{NBU(Next Billion Users)}{}{}{
 	从事移动端应用开发，具体内容属机密信息。
 }
 \cventry{2015}{摩根士丹利信息技术暑期实习生}{技术与数据部门}{}{}{设计并实现了第二代支付系统模拟交易软件，协助测试内部交易系统。该模拟器通过解析报文并发送对应的回复报文伪装为通信对端，与内部系统进行模拟交易。}
@@ -52,13 +52,13 @@
 \section{项目经历}
 \renewcommand{\baselinestretch}{1.2}
 
-\cventry{2016--2017}
-{NVDS}
-{存储}
-{研究项目}{}
-{NVDS主要研究将非易失性内存应用于分布式存储系统，以提供快速备份与更低的延迟。通过将主节点的修改以RDMA写的方式同步到从节点，NVDS能够以低于5us的延迟完成256字节数据的备份。}
+\cventry{2017}
+{Apollonia}
+{物理引擎}
+{独立项目}{}
+{Apollonia 是一个基于冲量的轻量级2D物理引擎，为制作独立物理游戏而开发。目前已实现多边形碰撞与简单的关节（1000 LOC），仍在开发中。}
 
-\cventry{2015--2016}
+\cventry{2016}
 {Wgtcc}
 {编译器}
 {独立项目}{}
@@ -70,6 +70,12 @@
 {web服务器，网络编程}
 {独立项目}{}
 {julia是一个基于非阻塞I/O的高并发web服务器和反向代理。在局域网内，可达到 50K QPS 的 1KiB 静态页面访问。}
+
+\cventry{2016--2017}
+{NVDS}
+{存储}
+{研究项目}{}
+{NVDS主要研究将非易失性内存应用于分布式存储系统，以提供快速备份与更低的延迟。通过将主节点的修改以RDMA写的方式同步到从节点，NVDS能够以低于5us的延迟完成256字节数据的备份。}
 
 %\vspace*{0.2\baselineskip}
 %\cventry{2016}
@@ -96,12 +102,11 @@
 \cventry{2013}{国家奖学金}{}{}{}{}
 \cventry{2012}{国家励志奖学金}{}{}{}{}
 
-
 \section{技能}
 \cventry{语言}{C $\ge$ C++ $>$ Python $>$ Lisp}{}{}{}{}
-\cventry{英语}{CET-4 549 分}{流利的英语读写能力}{}{}{}
+%\cventry{英语}{CET-4 549 分}{流利的英语读写能力}{}{}{}
 \cventry{GitHub}{\url{www.github.com/wgtdkp}}{}{}{}{}
-\cventry{其它}{RDMA，网络编程，leveldb}{}{}{}{}
+%\cventry{其它}{RDMA，网络编程，leveldb}{}{}{}{}
 
 \closesection{}                   % needed to renewcommands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
