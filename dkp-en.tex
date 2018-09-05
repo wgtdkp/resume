@@ -8,7 +8,7 @@
 \usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.8]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
 \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -56,6 +56,13 @@
 % \cvitem{title}{\emph{Title}}
 % \cvitem{supervisors}{Supervisors}
 % \cvitem{description}{Short thesis abstract}
+
+\section{Work Experience}
+\cventry{2018}{Alibaba}
+{Distributed Dataase}
+{}{}{
+	As a member of Alibaba's database team that supports business from \textit{Taobao} to \textit{Tmall}, I was engaged in distributed consensus protocol and RPC framework. My first work was to implement our RPC protocol atop of RDMA network. We reduced response time with kernel-bypassing and copy-free technologies. The second, I participated in improving \textit{X-Paxos} (our implementation of the \textit{paxos} protocol) to support data partition, so that different partition goes to different paxos group but not a single group on a node, which will result in better performance.
+}
 
 \section{Internship}
 \cventry{2017}{Google}
@@ -130,6 +137,7 @@
 % \cvitemwithcomment{Language 1}{Skill level}{Comment}
 % \cvitemwithcomment{Language 2}{Skill level}{Comment}
 % \cvitemwithcomment{Language 3}{Skill level}{Comment}
+\clearpage
 
 \section{Awards \& Performance}
 \cventry{2015}{GPA Rank: 5\%}{}{}{}{}
