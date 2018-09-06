@@ -8,7 +8,7 @@
 \usepackage[utf8]{inputenc}
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.88]{geometry}
 \recomputelengths                             % required when changes are made to page layout lengths
 
 \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -49,7 +49,7 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2015--Present}{MS in Network and Service computing, Supervisor: Linpeng Huang}{Computer Science, Shanghai Jiao Tong University}{expected 2018}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2015--2018}{MS in Network and Service computing, Supervisor: Linpeng Huang}{Computer Science, Shanghai Jiao Tong University}{}{}{}  % arguments 3 to 6 can be left empty
 \cventry{2011--2015}{BA in Micro Electronic}{Electronic Engineering, Huazhong University of Science and Technology}{}{}{}
 
 % \section{Master thesis}
@@ -59,7 +59,7 @@
 
 \section{Work Experience}
 \cventry{2018}{Alibaba}
-{Distributed Dataase}
+{Distributed Database}
 {}{}{
 	As a member of Alibaba's database team that supports business from \textit{Taobao} to \textit{Tmall}, I was engaged in distributed consensus protocol and RPC framework. My first work was to implement our RPC protocol atop of RDMA network. We reduced response time with kernel-bypassing and copy-free technologies. The second, I participated in improving \textit{X-Paxos} (our implementation of the \textit{paxos} protocol) to support data partition, so that different partition goes to different paxos group but not a single group on a node, which will result in better performance.
 }
@@ -87,14 +87,14 @@
 	and it is quite easy to add more specifications with little work.
 }
 
-\section{Projects}
+\section{Project}
 
-\cventry{2017}
-{Apollonia}
-{Physics Engine}
-{Independent Project}{}{
-	Apollonia is a light impulse-based 2D physics engine, which is created to develop independent physics game. The polygon collison solver and simple joints are completed now. I am still working on it.
-}
+% \cventry{2017}
+% {Apollonia}
+% {Physics Engine}
+% {Independent Project}{}{
+%	Apollonia is a light impulse-based 2D physics engine, which is created to develop independent physics game. The polygon collison solver and simple joints are completed now. I am still working on it.
+% }
 
 \cventry{2016}
 {Wgtcc}
@@ -103,12 +103,12 @@
 	Wgtcc is a small yet standard C11 compiler. It implemented almost full C11 language standard including some advanced features: Static Assertion, Unicode String, Compound Literal, etc. A preprocessor is also included. 
 }
 
-\cventry{2016}
-{Julia}
-{Web Server, Network Programming}
-{Independent Project}{}{
-	Julia is a small and high performance http server and reverse proxy. Making use of non-blocking I/O and \textit{sendfile}, Julia achieves 56K QPS of 1KiB static page on commodity machine.
-}
+% \cventry{2016}
+% {Julia}
+% {Web Server, Network Programming}
+% {Independent Project}{}{
+%	Julia is a small and high performance http server and reverse proxy. Making use of non-blocking I/O and \textit{sendfile}, Julia achieves 56K QPS of 1KiB static page on commodity machine.
+% }
 
 \cventry{2016--2017}
 {NVDS}
@@ -137,17 +137,16 @@
 % \cvitemwithcomment{Language 1}{Skill level}{Comment}
 % \cvitemwithcomment{Language 2}{Skill level}{Comment}
 % \cvitemwithcomment{Language 3}{Skill level}{Comment}
-\clearpage
 
-\section{Awards \& Performance}
+\section{Award \& Performance}
 \cventry{2015}{GPA Rank: 5\%}{}{}{}{}
 \cventry{2014}{First Prize in Electronic Design Contest in Provinces}{}{}{}{}
 \cventry{2013}{Annual Best Students of HUST}{}{}{}{}
 \cventry{2013}{National Scholarship}{}{}{}{}
 \cventry{2012}{National Encouragement Scholarship}{}{}{}{}
 
-\section{Skills}
-\cventry{Languages}{C $\ge$ C++ $>$ Python $\ge$ Lisp}{}{}{}{}
+\section{Skill}
+\cventry{Languages}{C $\ge$ C++ $>$ Lisp $\ge$ Python }{}{}{}{}
 \cventry{GitHub}{\url{www.github.com/wgtdkp}}{}{}{}{}
 
 \clearpage
